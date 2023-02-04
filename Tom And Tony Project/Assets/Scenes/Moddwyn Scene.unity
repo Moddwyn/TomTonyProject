@@ -1462,10 +1462,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pictureItems:
-  - {fileID: 11400000, guid: a2200ee2079534b41aee446e4b2b6090, type: 2}
+  - {fileID: 11400000, guid: 0bf203d6412b70f4c9684c5c8da7f3c4, type: 2}
   currentPictoword: {fileID: 0}
   currentWordText: 
   timer: 60
+  timerOn: 0
   picture1: {fileID: 1162287028}
   picture2: {fileID: 177582873}
   inputField: {fileID: 803275278}
