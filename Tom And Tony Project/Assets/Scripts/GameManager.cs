@@ -5,8 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public AudioSource audioSource;
+    public static GameManager Instance;
+
+    void Awake()
+    {
+        Instance = this;
+    }
+
     public void GoToScene(int index)
     {
         SceneManager.LoadScene(index);
+    }
+
+    public void RestartScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }

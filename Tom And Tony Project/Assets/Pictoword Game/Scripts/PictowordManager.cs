@@ -10,6 +10,7 @@ public class PictowordManager : MonoBehaviour
     public PictureItem currentPictoword;
     public string currentWordText;
     [Space(20)]
+    public int score;
     public float timer;
     public bool timerOn;
     [Space(20)]
@@ -18,23 +19,39 @@ public class PictowordManager : MonoBehaviour
     public TMP_InputField inputField;
     public TMP_Text wordText;
     public TMP_Text timerText;
+    public TMP_Text scoreText;
+    public TMP_Text finalScoreText;
+    public GameObject gameOverScreen;
+    public AudioClip correctAudio;
 
     void Start()
     {
+        score = 0;
+        gameOverScreen.SetActive(false);
         GrabRandomPictureItem();
-
     }
 
     void Update()
     {
-        
+        scoreText.text = "Score: " + score;
+        finalScoreText.text = "Final Score: " + score;
 
-        if(currentPictoword != null)
+        if(timer > 0)
         {
-            if(inputField.text.ToUpper() == currentPictoword.word.ToUpper())
+            if(currentPictoword != null)
             {
-                print("guessed!");
+                if(inputField.text.ToUpper() == currentPictoword.word.ToUpper())
+                {
+                    score++;
+
+                    GameManager.Instance.audioSource.PlayOneShot(correctAudio);
+                    inputField.text = "";
+                    GrabRandomPictureItem();
+                }
             }
+        } else
+        {
+            gameOverScreen.SetActive(true);
         }
 
         if(timerOn) TimerUIUpdate();
@@ -49,7 +66,17 @@ public class PictowordManager : MonoBehaviour
 
     public void GrabRandomPictureItem()
     {
-        currentPictoword = pictureItems[UnityEngine.Random.Range(0, pictureItems.Count)];
+        if(currentPictoword == null)
+            currentPictoword = pictureItems[UnityEngine.Random.Range(0, pictureItems.Count)];
+        else
+        {
+            while(true)
+            {
+                PictureItem newPictureItem = pictureItems[UnityEngine.Random.Range(0, pictureItems.Count)];
+                if(currentPictoword.word == newPictureItem.word) continue;
+                else { currentPictoword = newPictureItem; break; }
+            }
+        }
 
         currentWordText = new String('_', currentPictoword.word.Length);
         UpdateUI(currentPictoword);

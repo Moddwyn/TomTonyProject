@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main Menu Scene.unity
-    guid: 232dbe6743d3fa1489ce57d8570339a0
+    path: Assets/Scenes/Main Menu.unity
+    guid: 7a71196430540c848bfbe68397671672
   - enabled: 1
-    path: Assets/Scenes/Tom Scene.unity
+    path: Assets/Scenes/Pictoword.unity
     guid: 9716736ac7c77c54eab7406176fe2d72
   m_configObjects: {}
