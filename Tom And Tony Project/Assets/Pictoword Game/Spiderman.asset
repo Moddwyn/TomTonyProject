@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   picture1: {fileID: 21300000, guid: 555d7fb5499ff4731914f472999c435a, type: 3}
   picture2: {fileID: 21300000, guid: bbf23a60929ae40ab9c4fcbb33373614, type: 3}
-  word: 
+  word: Spiderman

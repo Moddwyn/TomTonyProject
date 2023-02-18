@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   picture1: {fileID: 21300000, guid: 034a17e43febbc349a42c545ac32627e, type: 3}
   picture2: {fileID: 21300000, guid: 515ae905b1362ca4abac477d99bd3939, type: 3}
-  word: sandwich
+  word: Sandwich

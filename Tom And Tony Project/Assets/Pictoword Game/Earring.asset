@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   picture1: {fileID: 21300000, guid: 7831bb944e868d04587ff4931bb7eb26, type: 3}
   picture2: {fileID: 21300000, guid: c38df71483f93e94fb5636e416a40917, type: 3}
-  word: earring
+  word: Earring

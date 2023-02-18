@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   picture1: {fileID: 21300000, guid: 4affb861df3f2e14fad3a03bb9f2cbe2, type: 3}
   picture2: {fileID: 21300000, guid: 3f9b1e74197f5f9449a617a20da6bf78, type: 3}
-  word: cheeseburger
+  word: Cheeseburger

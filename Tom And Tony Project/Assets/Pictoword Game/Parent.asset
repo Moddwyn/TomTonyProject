@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   picture1: {fileID: 21300000, guid: 74433e17c34d34f21a39a7ea40143543, type: 3}
   picture2: {fileID: 21300000, guid: 70178ec8007a14fb6992fbba7fc7a63d, type: 3}
-  word: 
+  word: Parent

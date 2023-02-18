@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   picture1: {fileID: 21300000, guid: 2bc780877fe8c408ba2157671a452821, type: 3}
   picture2: {fileID: 21300000, guid: bb7b482da3b9b4c2e85882ba6899863e, type: 3}
-  word: football
+  word: Football

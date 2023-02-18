@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   picture1: {fileID: 21300000, guid: 3a06fa8a5bb87614a99f5f7499bd229b, type: 3}
   picture2: {fileID: 21300000, guid: 5cb68ff6df1d61148a29ef609b700cc1, type: 3}
-  word: jellyfish
+  word: Jellyfish

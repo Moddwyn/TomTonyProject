@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5edf8ff4eaf74a146b73105ee4cb0564, type: 3}
-  m_Name: Spacebar
+  m_Name: Monitor
   m_EditorClassIdentifier: 
-  picture1: {fileID: 21300000, guid: 26c22005a09ad4a23845dec345cea25c, type: 3}
-  picture2: {fileID: 21300000, guid: d274a4f462002244fbeb27a4ab5b5fd9, type: 3}
-  word: Spacebar
+  picture1: {fileID: 21300000, guid: 96fe91bc02c814f288f14a5d48786605, type: 3}
+  picture2: {fileID: 21300000, guid: 309785c54b8654edda30b4bfa3c55d27, type: 3}
+  word: Monitor

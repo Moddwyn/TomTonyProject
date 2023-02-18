@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5edf8ff4eaf74a146b73105ee4cb0564, type: 3}
-  m_Name: Spacebar
+  m_Name: Waterbottle
   m_EditorClassIdentifier: 
-  picture1: {fileID: 21300000, guid: 26c22005a09ad4a23845dec345cea25c, type: 3}
-  picture2: {fileID: 21300000, guid: d274a4f462002244fbeb27a4ab5b5fd9, type: 3}
-  word: Spacebar
+  picture1: {fileID: 21300000, guid: ec9d6fe66547b449daedc554539561b5, type: 3}
+  picture2: {fileID: 21300000, guid: 8c0f4abf5ec15460ab9d05046bbbef76, type: 3}
+  word: Waterbottle
