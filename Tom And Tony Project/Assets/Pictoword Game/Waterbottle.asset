@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   picture1: {fileID: 21300000, guid: ec9d6fe66547b449daedc554539561b5, type: 3}
   picture2: {fileID: 21300000, guid: 8c0f4abf5ec15460ab9d05046bbbef76, type: 3}
-  word: Waterbottle
+  word: Water Bottle

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   picture1: {fileID: 21300000, guid: ee52035f9c87c40b49dc0758e8345055, type: 3}
   picture2: {fileID: 21300000, guid: 32cd48fb0bd9b427992b277ba910c68b, type: 3}
-  word: Videogame
+  word: Video Game

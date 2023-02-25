@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   picture1: {fileID: 21300000, guid: e440ae3af15b8427c9df13aaf9b7dabb, type: 3}
   picture2: {fileID: 21300000, guid: 700f124074a6a40719c202b420b28f6c, type: 3}
-  word: 
+  word: Planet

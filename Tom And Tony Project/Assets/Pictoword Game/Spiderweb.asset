@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   picture1: {fileID: 21300000, guid: ca6025a9ad74649c7807cb5b8c5f5211, type: 3}
   picture2: {fileID: 21300000, guid: 8dab12defc88d4d38b07e6b291b80cc0, type: 3}
-  word: Spiderweb
+  word: Spider Web

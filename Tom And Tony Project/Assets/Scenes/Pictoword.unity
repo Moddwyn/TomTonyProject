@@ -1369,10 +1369,31 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b22fbee0e32fa4f4782876a7a0ebf9d1, type: 2}
   - {fileID: 11400000, guid: 08fb3489db56f7b4199a556f2f393c1d, type: 2}
   - {fileID: 11400000, guid: 0bf203d6412b70f4c9684c5c8da7f3c4, type: 2}
+  - {fileID: 11400000, guid: 0f90764b81421430a811e7a59ca62216, type: 2}
+  - {fileID: 11400000, guid: c296ffd3681bc472a929a56328ae2629, type: 2}
+  - {fileID: 11400000, guid: 66f7747e0113440d7bb9e5f2835524ba, type: 2}
+  - {fileID: 11400000, guid: 0edbe1614f2254307ad3f98141a9918a, type: 2}
+  - {fileID: 11400000, guid: 0fde56081dae94c6bac0d4fd4462d8bb, type: 2}
+  - {fileID: 11400000, guid: b14239b1649ebd1488e1dd8c65aa790c, type: 2}
+  - {fileID: 11400000, guid: 177f29a427a904e18b428c5bda787ecb, type: 2}
+  - {fileID: 11400000, guid: e861edb2a3ea14941891a82e28439215, type: 2}
+  - {fileID: 11400000, guid: 39c99553ecf8c4ea189d9fb7632329af, type: 2}
+  - {fileID: 11400000, guid: b3044c33ee9df49a988bf0ec00833293, type: 2}
+  - {fileID: 11400000, guid: a99bb951ca94a433f86cc3b60347d05f, type: 2}
+  - {fileID: 11400000, guid: 02a3bd30d8dbc415a8950b7cc753f5fc, type: 2}
+  - {fileID: 11400000, guid: 271aaa538db514f9795cd55ccb71e642, type: 2}
+  - {fileID: 11400000, guid: 04b1bdae5034d4324a1dc60372d72cd2, type: 2}
+  - {fileID: 11400000, guid: 7bd30a7a0bc3a4953910639efbbe3054, type: 2}
+  - {fileID: 11400000, guid: 4d74f51b5de824190956154ca4146ff2, type: 2}
+  - {fileID: 11400000, guid: 97ad30262cc6b4076903b5470337ebbf, type: 2}
+  - {fileID: 11400000, guid: bf4b802c1b1314c949cd3466ca4c4f35, type: 2}
+  - {fileID: 11400000, guid: 6526d2d5c0e9543cfa6e92cfa77e4e90, type: 2}
+  - {fileID: 11400000, guid: 29fd30246db7f4b87a3b4d0a078d47fc, type: 2}
+  - {fileID: 11400000, guid: 1ca6a2b21c3904c4ca1364bbaa9ac9f3, type: 2}
   currentPictoword: {fileID: 0}
   currentWordText: 
   score: 0
-  timer: 15
+  timer: 60
   timerOn: 1
   picture1: {fileID: 500229394}
   picture2: {fileID: 486779428}

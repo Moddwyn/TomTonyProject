@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pictoword.unity
     guid: 9716736ac7c77c54eab7406176fe2d72
+  - enabled: 1
+    path: Assets/Scenes/Basketball.unity
+    guid: 146c9cd4f95824a4492255219be72eb0
   m_configObjects: {}
