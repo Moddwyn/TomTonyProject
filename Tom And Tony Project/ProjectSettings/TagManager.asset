@@ -6,6 +6,8 @@ TagManager:
   tags:
   - hitter
   - platform
+  - Ball
+  - Ground
   layers:
   - Default
   - TransparentFX
