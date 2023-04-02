@@ -7,6 +7,8 @@ public class BasketballPointCounter : MonoBehaviour
 {
     public int points;
     public TMP_Text pointsText;
+    public AudioClip netClip;
+    public AudioClip scoreClip;
 
     void Update()
     {
@@ -18,6 +20,8 @@ public class BasketballPointCounter : MonoBehaviour
     {
         if(other.tag == "Ball")
         {
+            GameManager.Instance.audioSource.PlayOneShot(netClip);
+            GameManager.Instance.audioSource.PlayOneShot(scoreClip);
             points++;
         }
     }

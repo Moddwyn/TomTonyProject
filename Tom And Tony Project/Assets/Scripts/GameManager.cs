@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public AudioSource audioSource;
+    public AudioSource musicSource;
+    public AudioClip matchingFlipClip;
     public static GameManager Instance;
 
     void Awake()

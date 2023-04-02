@@ -26,6 +26,9 @@ public class BaskeballManager : MonoBehaviour
     public Image powerBar;
     public float timeToReset;
 
+    [Space(20)]
+    public AudioClip shootClip;
+
     bool powering;
     bool groundHit;
     Vector3 orgPosCenter;
@@ -58,6 +61,8 @@ public class BaskeballManager : MonoBehaviour
                 Vector3 forceDirection = currCam.forward;
                 forceDirection *= force;
                 currBall.AddForce(forceDirection / 8f + Vector3.up * forceDirection.y);
+
+                GameManager.Instance.audioSource.PlayOneShot(shootClip);
                 powering = false;
             }
         }
