@@ -11,6 +11,7 @@ public class PictowordManager : MonoBehaviour
     public string currentWordText;
     [Space(20)]
     public int score;
+    public int highScore;
     public float timer;
     public bool timerOn;
     [Space(20)]
@@ -20,6 +21,7 @@ public class PictowordManager : MonoBehaviour
     public TMP_Text wordText;
     public TMP_Text timerText;
     public TMP_Text scoreText;
+    public TMP_Text highScoreText;
     public TMP_Text finalScoreText;
     public GameObject gameOverScreen;
     public AudioClip correctAudio;
@@ -29,12 +31,20 @@ public class PictowordManager : MonoBehaviour
         score = 0;
         gameOverScreen.SetActive(false);
         GrabRandomPictureItem();
+
+        if(!PlayerPrefs.HasKey("Picto_High"))
+            PlayerPrefs.SetInt("Picto_High", 0);
+
+        highScore = PlayerPrefs.GetInt("Picto_High");
     }
 
     void Update()
     {
         scoreText.text = "Score: " + score;
         finalScoreText.text = "Final Score: " + score;
+        highScoreText.text = "High Score: " + highScore;
+        if(score >= highScore)
+            highScore = score;
 
         if(timer > 0)
         {
@@ -55,6 +65,16 @@ public class PictowordManager : MonoBehaviour
         }
 
         if(timerOn) TimerUIUpdate();
+    }
+
+    public void SaveHighScore()
+    {
+        PlayerPrefs.SetInt("Picto_High", highScore);
+    }
+
+    void OnApplicationQuit()
+    {
+        SaveHighScore();
     }
 
     void TimerUIUpdate()
@@ -78,7 +98,20 @@ public class PictowordManager : MonoBehaviour
             }
         }
 
-        currentWordText = new String('_', currentPictoword.word.Length);
+        //currentWordText = new String('_', currentPictoword.word.Length);
+        string result = "";
+        for (int i = 0; i < currentPictoword.word.Length; i++)
+        {
+            if (currentPictoword.word[i] != ' ')
+            {
+                result += '_';
+            }
+            else
+            {
+                result += ' ';
+            }
+        }
+        currentWordText = result;
         UpdateUI(currentPictoword);
     }
 
