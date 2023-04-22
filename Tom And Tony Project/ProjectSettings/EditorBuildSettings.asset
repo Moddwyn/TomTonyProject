@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Matching.unity
     guid: 59db29af17ffee946bc7bb5cd74217f5
+  - enabled: 1
+    path: Assets/Scenes/Math Game.unity
+    guid: 1e315e457be2847199deb46b831be751
   m_configObjects: {}
