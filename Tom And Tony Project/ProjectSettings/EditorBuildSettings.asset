@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Math Game.unity
     guid: 1e315e457be2847199deb46b831be751
+  - enabled: 1
+    path: Assets/Scenes/Maze.unity
+    guid: 912f8ef3430685c41ba000dbf1845856
   m_configObjects: {}
