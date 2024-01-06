@@ -151,8 +151,8 @@ Material:
     m_Floats:
     - _Albedo2Flow: -0.3
     - _Albedo2Tiling: 0.9
-    - _AlbedoContrast: 1.1
-    - _AlbedoIntensity: 1.25
+    - _AlbedoContrast: 1.23
+    - _AlbedoIntensity: 4.73
     - _Brightness: 1
     - _BumpReflectionStr: 0.5
     - _BumpScale: 1
@@ -194,7 +194,7 @@ Material:
     - _MainDetailScale: 3
     - _Metallic: 0
     - _MicrowaveScale: 1
-    - _MicrowaveStrength: 0.01
+    - _MicrowaveStrength: 1.02
     - _MinuteDetailIntensity: 1.455
     - _MinuteDetailScrollSpeed: 0.089
     - _MirrorContrast: 1
@@ -208,7 +208,7 @@ Material:
     - _Mitigation: 22.4
     - _Mode: 0
     - _NormalDetailFlow: 1
-    - _NormalMap1Strength: 0.95
+    - _NormalMap1Strength: 1.09
     - _NormalMap2Flow: 0.5
     - _NormalMap2Strength: 0.9
     - _NormalMap2Tiling: -0.9
@@ -242,9 +242,9 @@ Material:
     - _ReverseFlow: -5
     - _Saturation: 1
     - _SaturationRef: 0.5
-    - _Shininess: 0.15
+    - _Shininess: 0.478
     - _SmoothnessTextureChannel: 0
-    - _SoftFactor: 0.09
+    - _SoftFactor: 0.222
     - _SpecularHighlights: 1
     - _Speed: 0.5
     - _SpeedX: 0.1
