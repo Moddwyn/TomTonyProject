@@ -164,9 +164,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8df545e91e1d44648a47e081add2d74e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 740505710096295000, guid: 00f64b4bf40716f49b1439b2f5382d75, type: 3}
-  moveSpeed: 10
+  poolTag: Cannon Pool
+  moveSpeed: 15
   shootSpeed: 1.5
+  damage: 40
+  OnShoot:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &959522183668196226
 GameObject:
   m_ObjectHideFlags: 0

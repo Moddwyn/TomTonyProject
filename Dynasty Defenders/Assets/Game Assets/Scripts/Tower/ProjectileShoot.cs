@@ -5,15 +5,22 @@ using UnityEngine.Events;
 
 public class ProjectileShoot : MonoBehaviour
 {
-    public GameObject projectilePrefab; // Assign your prefab in the Inspector
-    public float moveSpeed = 5f;        // Speed at which the object moves towards the target
+    public string poolTag;
+    public float moveSpeed = 5f;
     public float shootSpeed = 1.5f;
+    public int damage = 20;
 
     public UnityEvent OnShoot;
 
+    ObjectPooler projectilePool;
+    void OnEnable() 
+    {
+        projectilePool = GameObject.FindGameObjectWithTag(poolTag).GetComponent<ObjectPooler>();
+    }
+
     public void Shoot(Transform target, Vector3 spawnLocation)
     {
-        GameObject spawnedObject = Instantiate(projectilePrefab, spawnLocation, Quaternion.identity);
+        GameObject spawnedObject = projectilePool.GrabFromPool(spawnLocation, Quaternion.identity);
         StartCoroutine(MoveObject(spawnedObject.transform, target, moveSpeed));
 
         OnShoot?.Invoke();
@@ -24,10 +31,17 @@ public class ProjectileShoot : MonoBehaviour
         Vector3 directionToTarget = target.position - obj.position;
         Quaternion targetRotation = Quaternion.LookRotation(directionToTarget);
         obj.rotation = targetRotation;
-        while (obj.transform.position != target.position)
+        while (Vector3.Distance(obj.transform.position, target.position) > 0.1f)
         {
             obj.transform.position = Vector3.MoveTowards(obj.transform.position, target.position, speed * Time.deltaTime);
             yield return null;
         }
+        HitEnemy(obj.gameObject, target.GetComponentInParent<Enemy>());
+    }
+
+    void HitEnemy(GameObject obj, Enemy target)
+    {
+        target.ChangeHealth(-damage);
+        projectilePool.InsertToPool(obj);
     }
 }

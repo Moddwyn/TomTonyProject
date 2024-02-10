@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using NaughtyAttributes;
 using UnityEngine;
 
 public class Tower : MonoBehaviour
@@ -7,8 +8,8 @@ public class Tower : MonoBehaviour
     public Transform weapon;
     public Transform projectileLocation;
 
-    [Space(20)]
-    public Transform target;
+    [HorizontalLine]
+    [ReadOnly] public Transform target;
 
     void Update() 
     {

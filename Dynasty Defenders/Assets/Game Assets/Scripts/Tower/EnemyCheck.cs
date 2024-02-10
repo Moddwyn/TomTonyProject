@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class EnemyCheck : MonoBehaviour
@@ -19,7 +20,7 @@ public class EnemyCheck : MonoBehaviour
 
     IEnumerator CheckForObjects()
     {
-        Collider[] hitColliders = Physics.OverlapSphere(transform.position, checkRadius, layerMask);
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, checkRadius, layerMask).Where(x=>!x.GetComponent<Enemy>().dead).ToArray();
         Collider closestCollider = null;
         float closestDistanceSqr = Mathf.Infinity;
         Vector3 currentPosition = transform.position;
@@ -39,8 +40,8 @@ public class EnemyCheck : MonoBehaviour
         if (closestCollider != null)
         {
             Transform closestPosition = closestCollider.transform;
-            tower.target = closestPosition;
-            projectileShoot.Shoot(closestPosition, tower.projectileLocation.position);
+            tower.target = closestPosition.GetComponent<Enemy>().targetPos;
+            projectileShoot.Shoot(tower.target, tower.projectileLocation.position);
         } else tower.target = null;
 
         yield return new WaitForSeconds(projectileShoot.shootSpeed);

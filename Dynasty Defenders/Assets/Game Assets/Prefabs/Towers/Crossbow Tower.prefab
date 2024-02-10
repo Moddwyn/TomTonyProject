@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8df545e91e1d44648a47e081add2d74e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 7636055006367184363, guid: e323c9de775fdd1479f699893317494c, type: 3}
+  poolTag: Arrow Pool
   moveSpeed: 20
   shootSpeed: 2
   OnShoot:

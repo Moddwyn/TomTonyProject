@@ -203,6 +203,7 @@ GameObject:
   - component: {fileID: 652105452}
   - component: {fileID: 652105451}
   - component: {fileID: 652105449}
+  - component: {fileID: 8468627684852969979}
   m_Layer: 11
   m_Name: Ogre
   m_TagString: Untagged
@@ -223,6 +224,7 @@ Transform:
   m_Children:
   - {fileID: 278158044167300966}
   - {fileID: 5504396288820406094}
+  - {fileID: 4268604519837011614}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -361,11 +363,11 @@ MonoBehaviour:
   targetRigidbody2D: {fileID: 0}
   targetTransform: {fileID: 262570975741747311}
   _result:
-    position: {x: 43.977783, y: 1.0071421, z: 183.83481}
-    up: {x: 0, y: 1, z: 0}
-    forward: {x: 0.009898028, y: -0.000000011756831, z: -0.999951}
-    color: {r: 1, g: 1, b: 1, a: 1}
-    size: 1
+    position: {x: 0, y: 0, z: 0}
+    up: {x: 0, y: 0, z: 0}
+    forward: {x: 0, y: 0, z: 0}
+    color: {r: 0, g: 0, b: 0, a: 0}
+    size: 0
     percent: 0
   _finalResult:
     position: {x: 43.977783, y: 1.0071421, z: 183.83481}
@@ -392,6 +394,25 @@ MonoBehaviour:
   _unityOnBeginningReached:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8468627684852969979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643740168714091221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7322568fd10da4a8fb6e9f1dce93f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyInfo: {fileID: 11400000, guid: d617cf91328bdc64a81d0e6169062914, type: 2}
+  currentHealth: 0
+  targetPos: {fileID: 4268604519837011614}
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  dead: 0
 --- !u!1 &713848036987249028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1227,6 +1248,36 @@ Transform:
   - {fileID: 3037466734481314957}
   m_Father: {fileID: 346409216067856497}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4610722773117085040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4268604519837011614}
+  m_Layer: 11
+  m_Name: Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4268604519837011614
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4610722773117085040}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.009, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 262570975741747311}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5001736687303699425
 GameObject:
