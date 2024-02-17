@@ -12,6 +12,10 @@ public class TowerInfo : ScriptableObject
     [ShowAssetPreview] public Sprite icon;
 
     [HorizontalLine]
+    public AudioClip OnPlaceAudio;
+    public AudioClip OnFireAudio;
+
+    [HorizontalLine]
     public List<TowerUpgrade> upgrades = new List<TowerUpgrade>();
 }
 

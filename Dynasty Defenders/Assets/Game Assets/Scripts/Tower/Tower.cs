@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Tower : MonoBehaviour
 {
+    public TowerInfo towerInfo;
     public Transform weapon;
     public Transform projectileLocation;
 
@@ -13,7 +14,7 @@ public class Tower : MonoBehaviour
 
     void Update() 
     {
-        if(target != null)
+        if(target != null && weapon != null)
         {
             Vector3 directionToTarget = target.position - weapon.position;
             Quaternion targetRotation = Quaternion.LookRotation(directionToTarget);

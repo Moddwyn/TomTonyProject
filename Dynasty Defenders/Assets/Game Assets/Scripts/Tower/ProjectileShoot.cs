@@ -1,29 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
+using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.Events;
 
+[RequireComponent(typeof(AudioSource))]
 public class ProjectileShoot : MonoBehaviour
 {
-    public string poolTag;
-    public float moveSpeed = 5f;
+    public bool moving;
     public float shootSpeed = 1.5f;
+    [ShowIf("IsMoving")] public string poolTag;
+    [ShowIf("IsMoving")] public float moveSpeed = 5f;
     public int damage = 20;
 
     public UnityEvent OnShoot;
 
     ObjectPooler projectilePool;
+    AudioSource audioSource;
+
     void OnEnable() 
     {
-        projectilePool = GameObject.FindGameObjectWithTag(poolTag).GetComponent<ObjectPooler>();
+        audioSource = GetComponent<AudioSource>();
+        if(IsMoving())
+            projectilePool = GameObject.FindGameObjectWithTag(poolTag).GetComponent<ObjectPooler>();
     }
 
-    public void Shoot(Transform target, Vector3 spawnLocation)
+    public void Shoot(Transform target, Vector3 spawnLocation, TowerInfo towerInfo)
+    {
+        if(IsMoving()) ShootMoving(target, spawnLocation);
+        else HitEnemy(null, target.GetComponentInParent<Enemy>());
+
+        if(towerInfo != null)
+            audioSource.PlayOneShot(towerInfo.OnFireAudio);
+        OnShoot?.Invoke();
+    }
+
+    void ShootMoving(Transform target, Vector3 spawnLocation)
     {
         GameObject spawnedObject = projectilePool.GrabFromPool(spawnLocation, Quaternion.identity);
         StartCoroutine(MoveObject(spawnedObject.transform, target, moveSpeed));
-
-        OnShoot?.Invoke();
     }
 
     IEnumerator MoveObject(Transform obj, Transform target, float speed)
@@ -42,6 +57,10 @@ public class ProjectileShoot : MonoBehaviour
     void HitEnemy(GameObject obj, Enemy target)
     {
         target.ChangeHealth(-damage);
-        projectilePool.InsertToPool(obj);
+
+        if(IsMoving())
+            projectilePool.InsertToPool(obj);
     }
+
+    public bool IsMoving()=>moving;
 }

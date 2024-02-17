@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Arrow Pool
   - Cannon Pool
+  - Laser Pool
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - Player
   - 
   - Environment
-  - 
+  - Projectile
   - Flying Enemies
   - Ground Enemies
   - 

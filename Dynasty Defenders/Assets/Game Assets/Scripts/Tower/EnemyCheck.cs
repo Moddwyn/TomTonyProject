@@ -41,7 +41,7 @@ public class EnemyCheck : MonoBehaviour
         {
             Transform closestPosition = closestCollider.transform;
             tower.target = closestPosition.GetComponent<Enemy>().targetPos;
-            projectileShoot.Shoot(tower.target, tower.projectileLocation.position);
+            projectileShoot.Shoot(tower.target, tower.projectileLocation.position, tower.towerInfo);
         } else tower.target = null;
 
         yield return new WaitForSeconds(projectileShoot.shootSpeed);
