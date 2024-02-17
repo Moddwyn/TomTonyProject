@@ -12,8 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f310926edb683ab4c86c6d37d37b2a96, type: 3}
   m_Name: Spaceship
   m_EditorClassIdentifier: 
-  towerName: 
-  description: 
+  towerName: SPACESHIP
+  description: SPACESHIP
   cost: 0
-  icon: {fileID: 0}
-  upgrades: []
+  icon: {fileID: 21300000, guid: d0e26978699e14941bf285a8c9d87811, type: 3}
+  upgrades:
+  - upgradeName: Speed boost
+    cost: 45
+    description: Increase Fire Speed
+  - upgradeName: Flying boost
+    cost: 40
+    description: Increase Flying Speed
+  - upgradeName: Damage boost
+    cost: 70
+    description: Increase Damage
+  - upgradeName: Nuclear boost
+    cost: 100
+    description: Change Firing Bullets To Bombs

@@ -12,8 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f310926edb683ab4c86c6d37d37b2a96, type: 3}
   m_Name: Crossbow
   m_EditorClassIdentifier: 
-  towerName: 
-  description: 
+  towerName: CROSSBOW
+  description: CROSSBOW
   cost: 0
-  icon: {fileID: 0}
-  upgrades: []
+  icon: {fileID: 21300000, guid: 09a86c4ee1c7547ae8a22826e9c88395, type: 3}
+  upgrades:
+  - upgradeName: Rapid speed
+    cost: 50
+    description: Increase the speed crossbow shoots
+  - upgradeName: Long range
+    cost: 40
+    description: increase the range of crossbow shots
+  - upgradeName: High damage
+    cost: 50
+    description: increase the damage of crossbow shots
+  - upgradeName: Firebow
+    cost: 60
+    description: add firework to the crossbow shots

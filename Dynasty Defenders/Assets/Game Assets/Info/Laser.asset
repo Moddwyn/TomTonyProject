@@ -12,8 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f310926edb683ab4c86c6d37d37b2a96, type: 3}
   m_Name: Laser
   m_EditorClassIdentifier: 
-  towerName: 
-  description: 
+  towerName: LASER
+  description: Laser
   cost: 0
-  icon: {fileID: 0}
-  upgrades: []
+  icon: {fileID: 21300000, guid: 4871b2173a8404bf2babdf29e44e78f6, type: 3}
+  upgrades:
+  - upgradeName: Long range
+    cost: 40
+    description: Increase Range
+  - upgradeName: Ice boost
+    cost: 65
+    description: Icing Effect
+  - upgradeName: Damage boost
+    cost: 70
+    description: Increase Damage
+  - upgradeName: Fire boost
+    cost: 85
+    description: Burning Effects

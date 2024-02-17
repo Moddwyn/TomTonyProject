@@ -12,8 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f310926edb683ab4c86c6d37d37b2a96, type: 3}
   m_Name: Flame
   m_EditorClassIdentifier: 
-  towerName: Flame
-  description: 
+  towerName: FLAME
+  description: FLAME
   cost: 0
-  icon: {fileID: 0}
-  upgrades: []
+  icon: {fileID: 21300000, guid: 75272c1def8e5485f9bdc9cfb0e38359, type: 3}
+  upgrades:
+  - upgradeName: High Voltage
+    cost: 40
+    description: 'increase the damage '
+  - upgradeName: Range boost
+    cost: 40
+    description: increase the range
+  - upgradeName: Enduring
+    cost: 40
+    description: increase the fire lasting
+  - upgradeName: Wide-area
+    cost: 40
+    description: increase the flame area

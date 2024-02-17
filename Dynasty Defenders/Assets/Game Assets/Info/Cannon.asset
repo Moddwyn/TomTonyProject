@@ -13,19 +13,22 @@ MonoBehaviour:
   m_Name: Cannon
   m_EditorClassIdentifier: 
   towerName: Cannon
-  description: THIS IS THE CANNON DESCRIPTION
-  cost: 15
+  description: Cannon
+  cost: 0
   icon: {fileID: 21300000, guid: 8e73c2c23687c492088864c1b9c897be, type: 3}
   upgrades:
   - upgradeName: High Damage
     cost: 50
     description: Increase the damage of each shot
-  - upgradeName: 
-    cost: 0
-    description: 
-  - upgradeName: 
-    cost: 0
-    description: 
-  - upgradeName: 
-    cost: 0
-    description: 
+  - upgradeName: High Damage
+    cost: 50
+    description: Increase the damage of each shot
+  - upgradeName: Long Range
+    cost: 40
+    description: Increase the range of each shot
+  - upgradeName: Wide-area
+    cost: 70
+    description: Increase the area damage of each shot
+  - upgradeName: Stick shot
+    cost: 20
+    description: slow down enemy shot

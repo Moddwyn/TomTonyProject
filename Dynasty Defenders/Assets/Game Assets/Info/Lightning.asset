@@ -12,8 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f310926edb683ab4c86c6d37d37b2a96, type: 3}
   m_Name: Lightning
   m_EditorClassIdentifier: 
-  towerName: 
-  description: 
+  towerName: LIGHTNING
+  description: LIGHTNING
   cost: 0
-  icon: {fileID: 0}
-  upgrades: []
+  icon: {fileID: 21300000, guid: b461924d5c7894b4cae7e732d070b001, type: 3}
+  upgrades:
+  - upgradeName: Rapid Discharge
+    cost: 30
+    description: Increase the speed lightning shoots
+  - upgradeName: Multistrike
+    cost: 70
+    description: Increase the amount of lightning bolts
+  - upgradeName: High Voltage
+    cost: 50
+    description: Increase the damage of each lightning bolt
+  - upgradeName: Long-Range Strike
+    cost: 20
+    description: Expand zap range
