@@ -2771,7 +2771,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff7322568fd10da4a8fb6e9f1dce93f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyInfo: {fileID: 11400000, guid: 7572eaf195b3541429daad7ca939c583, type: 2}
+  currentHealth: 0
   targetPos: {fileID: 5823055235840345820}
+  disappearTime: 4
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  dead: 0
+  splineFollower: {fileID: 0}
+  pool: {fileID: 0}
 --- !u!1 &5835052846534861091
 GameObject:
   m_ObjectHideFlags: 0

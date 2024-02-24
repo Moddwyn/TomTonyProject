@@ -52,11 +52,10 @@ public class ObjectPooler : MonoBehaviour
             PopulatePool(poolIncrement);
 
         GameObject obj = GrabFromBottom();
+        obj.SetActive(true);
 
         obj.transform.position = position;
         obj.transform.rotation = rotation;
-
-        obj.SetActive(true);
 
         return obj;
     }

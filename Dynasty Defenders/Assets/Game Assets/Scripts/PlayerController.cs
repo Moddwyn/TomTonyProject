@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
@@ -42,6 +43,8 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         cc = GetComponent<CharacterController>();
+
+        AllowControl(true);
     }
 
     void Update()
@@ -52,8 +55,7 @@ public class PlayerController : MonoBehaviour
             Look();
         if (allowMove)
             Move();
-        Cursor.lockState = allowLook ? CursorLockMode.Locked : CursorLockMode.None;
-        Cursor.visible = allowLook ? false : true;
+        
     }
 
     void Move()
@@ -102,5 +104,26 @@ public class PlayerController : MonoBehaviour
 
         cameraTransform.localRotation = Quaternion.AngleAxis(-currentMouseLook.y, Vector3.right);
         transform.localRotation = Quaternion.AngleAxis(currentMouseLook.x, Vector3.up);
+    }
+
+    public void AllowLook(bool allow)
+    {
+        Cursor.lockState = allow ? CursorLockMode.Locked : CursorLockMode.None;
+        Cursor.visible = !allow;
+
+        allowLook = allow;
+    }
+
+    public void AllowControl(bool allow)
+    {
+        allowJump = allow;
+        allowMove = allow;
+
+        AllowLook(allow);
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(0);
     }
 }

@@ -7,6 +7,10 @@ TagManager:
   - Arrow Pool
   - Cannon Pool
   - Laser Pool
+  - Zombie Pool
+  - Ogre Pool
+  - Flying Monkey Pool
+  - Dragon Pool
   layers:
   - Default
   - TransparentFX
@@ -20,7 +24,7 @@ TagManager:
   - Projectile
   - Flying Enemies
   - Ground Enemies
-  - 
+  - Tower
   - 
   - 
   - 

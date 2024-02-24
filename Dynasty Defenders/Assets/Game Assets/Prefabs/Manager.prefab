@@ -1,0 +1,424 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &499883009932117411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4740170074861314281}
+  - component: {fileID: 8546347316314637879}
+  m_Layer: 0
+  m_Name: Ogre Pool
+  m_TagString: Ogre Pool
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4740170074861314281
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499883009932117411}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 982218780159182319}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8546347316314637879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499883009932117411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bad3e2da6446ed4086ec98ae0c8ed39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 4740170074861314281}
+  prefabs:
+  - {fileID: 643740168714091221, guid: 61b7e8ecaafbe5e4a9a68d018aa6ec50, type: 3}
+  initialPoolSize: 20
+  poolIncrement: 3
+  pool: []
+  allObjects: []
+--- !u!1 &982218779450506867
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 982218779450506866}
+  - component: {fileID: 982218779450506865}
+  m_Layer: 0
+  m_Name: Cannon Pool
+  m_TagString: Cannon Pool
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &982218779450506866
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982218779450506867}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 982218780159182319}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &982218779450506865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982218779450506867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bad3e2da6446ed4086ec98ae0c8ed39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 982218779450506866}
+  prefabs:
+  - {fileID: 740505710096295000, guid: 00f64b4bf40716f49b1439b2f5382d75, type: 3}
+  initialPoolSize: 20
+  poolIncrement: 3
+  pool: []
+  allObjects: []
+--- !u!1 &982218779545938246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 982218779545938245}
+  - component: {fileID: 982218779545938244}
+  m_Layer: 0
+  m_Name: Laser Pool
+  m_TagString: Laser Pool
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &982218779545938245
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982218779545938246}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 982218780159182319}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &982218779545938244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982218779545938246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bad3e2da6446ed4086ec98ae0c8ed39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 982218779545938245}
+  prefabs:
+  - {fileID: 5948022785360537072, guid: df46393ffc3856845b2b86539df5a925, type: 3}
+  initialPoolSize: 20
+  poolIncrement: 3
+  pool: []
+  allObjects: []
+--- !u!1 &982218780159182312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 982218780159182319}
+  - component: {fileID: 291086291}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &982218780159182319
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982218780159182312}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 982218780692730200}
+  - {fileID: 982218779450506866}
+  - {fileID: 982218779545938245}
+  - {fileID: 7550154144880294189}
+  - {fileID: 4740170074861314281}
+  - {fileID: 1748996459877059734}
+  - {fileID: 8726375335130244627}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &291086291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982218780159182312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e597df39694ad68478cf610457c045fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyContainers:
+  - enemy: {fileID: 7130901505570526517, guid: 688e2dfe2a21f2e4b9dde1fa5287a185, type: 3}
+    pickChance: 90
+    poolTag: Zombie Pool
+    pool: {fileID: 0}
+  - enemy: {fileID: 8468627684852969979, guid: 61b7e8ecaafbe5e4a9a68d018aa6ec50, type: 3}
+    pickChance: 80
+    poolTag: Ogre Pool
+    pool: {fileID: 0}
+  - enemy: {fileID: 1196984936548698183, guid: cbff51f5200378444b45779a40b663a3, type: 3}
+    pickChance: 60
+    poolTag: Flying Monkey Pool
+    pool: {fileID: 0}
+  - enemy: {fileID: 7197217850287426706, guid: b27f8535df20a394e9ec3c5b150811a1, type: 3}
+    pickChance: 1
+    poolTag: Dragon Pool
+    pool: {fileID: 0}
+  enemiesInWorld: []
+  breakTimeBetweenRounds: 5
+  timeBetweenSpawns: 1.5
+  enemyPerRound: 020000000300000005000000080000000c0000000f0000001400000019000000190000001e000000
+  currentRound: 0
+--- !u!1 &982218780692730201
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 982218780692730200}
+  - component: {fileID: 982218780692730207}
+  m_Layer: 0
+  m_Name: Arrow Pool
+  m_TagString: Arrow Pool
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &982218780692730200
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982218780692730201}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 982218780159182319}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &982218780692730207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982218780692730201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bad3e2da6446ed4086ec98ae0c8ed39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 982218780692730200}
+  prefabs:
+  - {fileID: 7636055006367184363, guid: e323c9de775fdd1479f699893317494c, type: 3}
+  initialPoolSize: 20
+  poolIncrement: 3
+  pool: []
+  allObjects: []
+--- !u!1 &5327982088590451579
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1748996459877059734}
+  - component: {fileID: 5730800779959258690}
+  m_Layer: 0
+  m_Name: Flying Monkey Pool
+  m_TagString: Flying Monkey Pool
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1748996459877059734
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5327982088590451579}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 982218780159182319}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5730800779959258690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5327982088590451579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bad3e2da6446ed4086ec98ae0c8ed39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 1748996459877059734}
+  prefabs:
+  - {fileID: 280872882548661732, guid: cbff51f5200378444b45779a40b663a3, type: 3}
+  initialPoolSize: 20
+  poolIncrement: 3
+  pool: []
+  allObjects: []
+--- !u!1 &5870311947689849127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8726375335130244627}
+  - component: {fileID: 7385196996073748907}
+  m_Layer: 0
+  m_Name: Dragon Pool
+  m_TagString: Dragon Pool
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8726375335130244627
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5870311947689849127}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 982218780159182319}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7385196996073748907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5870311947689849127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bad3e2da6446ed4086ec98ae0c8ed39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 8726375335130244627}
+  prefabs:
+  - {fileID: 5835008384544316699, guid: b27f8535df20a394e9ec3c5b150811a1, type: 3}
+  initialPoolSize: 20
+  poolIncrement: 3
+  pool: []
+  allObjects: []
+--- !u!1 &8779962638870328355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7550154144880294189}
+  - component: {fileID: 135279227014354830}
+  m_Layer: 0
+  m_Name: Zombie Pool
+  m_TagString: Zombie Pool
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7550154144880294189
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779962638870328355}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 982218780159182319}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &135279227014354830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8779962638870328355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bad3e2da6446ed4086ec98ae0c8ed39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 7550154144880294189}
+  prefabs:
+  - {fileID: 5334321521091773357, guid: 688e2dfe2a21f2e4b9dde1fa5287a185, type: 3}
+  initialPoolSize: 20
+  poolIncrement: 3
+  pool: []
+  allObjects: []

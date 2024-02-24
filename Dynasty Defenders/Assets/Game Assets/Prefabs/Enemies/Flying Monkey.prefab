@@ -695,7 +695,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff7322568fd10da4a8fb6e9f1dce93f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyInfo: {fileID: 11400000, guid: 75cb7820f42c5b5429cbdcaa5b66b186, type: 2}
+  currentHealth: 0
   targetPos: {fileID: 9033808717764066823}
+  disappearTime: 4
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 279633706954734601}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  dead: 0
+  splineFollower: {fileID: 0}
+  pool: {fileID: 0}
 --- !u!1 &280872882548703706
 GameObject:
   m_ObjectHideFlags: 0
@@ -2069,6 +2090,11 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 114466666382659404, guid: 8237f7b8f33ea8a4c84650594a690807, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8237f7b8f33ea8a4c84650594a690807, type: 3}
+--- !u!1 &279633706954734601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1311965450642704, guid: 8237f7b8f33ea8a4c84650594a690807, type: 3}
+  m_PrefabInstance: {fileID: 280872883380001049}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &282249549217135807 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4253040093586854, guid: 8237f7b8f33ea8a4c84650594a690807, type: 3}

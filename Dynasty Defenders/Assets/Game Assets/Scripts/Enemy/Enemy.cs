@@ -13,18 +13,26 @@ public class Enemy : MonoBehaviour
     public Transform targetPos;
 
     [HorizontalLine]
+    public float disappearTime = 4;
     public UnityEvent OnDeath;
     [ReadOnly] public bool dead;
 
-    SplineFollower splineFollower;
+    [HideInInspector] public SplineFollower splineFollower;
+    [HideInInspector] public ObjectPooler pool;
     Animator animator;
 
     void OnEnable()
     {
+        dead = false;
+
         animator = GetComponent<Animator>();
         splineFollower = GetComponent<SplineFollower>();
+
+        splineFollower.SetPercent(0);
         splineFollower.followSpeed = enemyInfo.speed;
         currentHealth = enemyInfo.health;
+
+        StartCoroutine(StartDoingDamage());
     }
 
     public void ChangeHealth(int amount)
@@ -37,8 +45,28 @@ public class Enemy : MonoBehaviour
 
             animator.SetTrigger("Die");
             splineFollower.followSpeed = 0;
-
+            CoinsManager.Instance.ChangeCoins(enemyInfo.coinDropAmount);
+            
             OnDeath?.Invoke();
+            StartCoroutine(Disappear());
         }
+    }
+
+    IEnumerator StartDoingDamage()
+    {
+        yield return new WaitForSeconds(enemyInfo.damageRate);
+        if(splineFollower.result.percent >= 0.99f)
+            Health.Instance.ChangeHealth(-enemyInfo.damage);
+
+        StartCoroutine(StartDoingDamage());
+    }
+
+    IEnumerator Disappear()
+    {
+        yield return new WaitForSeconds(disappearTime);
+        pool.InsertToPool(gameObject);
+
+        gameObject.transform.position = Vector3.zero;
+        if(TryGetComponent<Rigidbody>(out Rigidbody rb)) rb.velocity = Vector3.zero;
     }
 }

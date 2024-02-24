@@ -7,9 +7,10 @@ using UnityEngine;
 public class EnemyInfo : ScriptableObject
 {
     public int health = 100;
-    public int dropCost;
+    public int coinDropAmount = 1;
     public float speed = 3;
     public int damage = 5;
+    public float damageRate = 2;
 
     [HorizontalLine]
     public AudioClip movingAudio;
