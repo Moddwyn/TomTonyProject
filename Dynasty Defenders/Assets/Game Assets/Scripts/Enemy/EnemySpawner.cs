@@ -48,6 +48,12 @@ public class EnemySpawner : MonoBehaviour
 
         currentRound++;
         if (currentRound < enemyPerRound.Count) StartCoroutine(SpawnRoutine());
+        else if(currentRound >= enemyPerRound.Count) 
+        {   
+            while(enemiesInWorld.Count > 0)
+                yield return null;
+            Health.Instance.OnWin?.Invoke();
+        }
     }
 
     void SpawnRandomEnemy()

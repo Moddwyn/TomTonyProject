@@ -11,6 +11,7 @@ public class BuildingSystem : MonoBehaviour
     [ReadOnly] public int chosenBuild;
     [ReadOnly] public Tower currentBuilding;
     public Color chosenColor;
+    public GameObject descriptionPanel;
 
     [HorizontalLine]
     public Camera cam;
@@ -74,6 +75,12 @@ public class BuildingSystem : MonoBehaviour
                 }
             }
         }
+
+        if(currentBuilding != null && Input.GetKey(KeyCode.Q))
+        {
+            descriptionPanel.SetActive(true);
+            descriptionPanel.GetComponentInChildren<TMP_Text>().text = currentBuilding.towerInfo.description;
+        } else descriptionPanel.SetActive(false);
     }
 
     void PlaceBuild(Vector3 position)

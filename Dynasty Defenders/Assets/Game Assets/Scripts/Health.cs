@@ -12,6 +12,7 @@ public class Health : MonoBehaviour
     [HorizontalLine]
     [ReadOnly] public bool dead;
     public UnityEvent OnDie;
+    public UnityEvent OnWin;
 
     public static Health Instance;
 
