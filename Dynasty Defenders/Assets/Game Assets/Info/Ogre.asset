@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11fb94f0c09c79942b67208ec567f95c, type: 3}
   m_Name: Ogre
   m_EditorClassIdentifier: 
-  health: 100
-  coinDropAmount: 1
+  health: 120
+  coinDropAmount: 55
   speed: 3
-  damage: 5
+  damage: 15
   damageRate: 2
   movingAudio: {fileID: 8300000, guid: e7447f8c458584dd28b994c86026c436, type: 3}
   randomAudio: {fileID: 0}

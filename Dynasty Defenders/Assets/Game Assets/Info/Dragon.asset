@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11fb94f0c09c79942b67208ec567f95c, type: 3}
   m_Name: Dragon
   m_EditorClassIdentifier: 
-  health: 100
-  coinDropAmount: 1
+  health: 200
+  coinDropAmount: 80
   speed: 3
-  damage: 5
+  damage: 35
   damageRate: 2
   movingAudio: {fileID: 8300000, guid: 1d68d92e995534db0b78fc00e64665b2, type: 3}
   randomAudio: {fileID: 8300000, guid: 47bfb2d1f946c475baf4bade7b54da87, type: 3}

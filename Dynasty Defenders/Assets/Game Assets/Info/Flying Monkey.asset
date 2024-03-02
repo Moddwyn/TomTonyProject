@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11fb94f0c09c79942b67208ec567f95c, type: 3}
   m_Name: Flying Monkey
   m_EditorClassIdentifier: 
-  health: 100
-  coinDropAmount: 1
+  health: 150
+  coinDropAmount: 65
   speed: 3
-  damage: 5
+  damage: 25
   damageRate: 2
   movingAudio: {fileID: 8300000, guid: 91d6e513cc93d4e55bc350a1ebd1b5c0, type: 3}
   randomAudio: {fileID: 8300000, guid: 652a8b65f48c947eeaadea727703eb0d, type: 3}
