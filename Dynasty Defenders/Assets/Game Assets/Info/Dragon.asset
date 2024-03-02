@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Dragon
   m_EditorClassIdentifier: 
   health: 100
-  dropCost: 0
+  coinDropAmount: 1
   speed: 3
   damage: 5
-  movingAudio: {fileID: 0}
-  randomAudio: {fileID: 0}
-  damagedAudio: {fileID: 0}
-  deathAudio: {fileID: 0}
+  damageRate: 2
+  movingAudio: {fileID: 8300000, guid: 1d68d92e995534db0b78fc00e64665b2, type: 3}
+  randomAudio: {fileID: 8300000, guid: 47bfb2d1f946c475baf4bade7b54da87, type: 3}
+  damagedAudio: {fileID: 8300000, guid: fbedd716756d7437aacb230c08fcb889, type: 3}
+  deathAudio: {fileID: 8300000, guid: dcc849b98ffd34b319641e03eff75c7d, type: 3}

@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Flying Monkey
   m_EditorClassIdentifier: 
   health: 100
-  dropCost: 0
+  coinDropAmount: 1
   speed: 3
   damage: 5
-  movingAudio: {fileID: 0}
-  randomAudio: {fileID: 0}
-  damagedAudio: {fileID: 0}
-  deathAudio: {fileID: 0}
+  damageRate: 2
+  movingAudio: {fileID: 8300000, guid: 91d6e513cc93d4e55bc350a1ebd1b5c0, type: 3}
+  randomAudio: {fileID: 8300000, guid: 652a8b65f48c947eeaadea727703eb0d, type: 3}
+  damagedAudio: {fileID: 8300000, guid: d33de5c600a844fa2b36fbca4d4f3d78, type: 3}
+  deathAudio: {fileID: 8300000, guid: a6130031db20a41eeb69e8687328bb30, type: 3}
