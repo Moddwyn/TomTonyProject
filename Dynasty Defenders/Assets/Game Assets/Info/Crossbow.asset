@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Crossbow
   m_EditorClassIdentifier: 
   towerName: CROSSBOW
-  description: CROSSBOW
+  description: Crossbow that shoots arrow.
   cost: 0
   icon: {fileID: 21300000, guid: 09a86c4ee1c7547ae8a22826e9c88395, type: 3}
+  OnPlaceAudio: {fileID: 8300000, guid: 1a78f9556d4da4157a2fe2630db14ab8, type: 3}
+  OnFireAudio: {fileID: 0}
   upgrades:
   - upgradeName: Rapid speed
     cost: 50

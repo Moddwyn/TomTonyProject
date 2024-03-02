@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Flame
   m_EditorClassIdentifier: 
   towerName: FLAME
-  description: FLAME
+  description: Weapon with fire damage.
   cost: 0
   icon: {fileID: 21300000, guid: 75272c1def8e5485f9bdc9cfb0e38359, type: 3}
+  OnPlaceAudio: {fileID: 8300000, guid: db6eb9e8f05db463eb13c23fc575570c, type: 3}
+  OnFireAudio: {fileID: 0}
   upgrades:
   - upgradeName: High Voltage
     cost: 40
