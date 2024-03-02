@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11fb94f0c09c79942b67208ec567f95c, type: 3}
   m_Name: Zombie
   m_EditorClassIdentifier: 
-  health: 100
-  coinDropAmount: 40
+  health: 60
+  coinDropAmount: 150
   speed: 3
   damage: 10
   damageRate: 2

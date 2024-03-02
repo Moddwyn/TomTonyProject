@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using NaughtyAttributes;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class BuildingSystem : MonoBehaviour
@@ -12,6 +13,7 @@ public class BuildingSystem : MonoBehaviour
     [ReadOnly] public Tower currentBuilding;
     public Color chosenColor;
     public GameObject descriptionPanel;
+    public UnityEvent OnChooseBuilding;
 
     [HorizontalLine]
     public Camera cam;
@@ -72,6 +74,8 @@ public class BuildingSystem : MonoBehaviour
 
                     foreach (var tou in towerOptionUIs) tou.color = Color.white;
                     towerOptionUIs[chosenBuild].color = chosenColor;
+
+                    OnChooseBuilding?.Invoke();
                 }
             }
         }

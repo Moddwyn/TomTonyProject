@@ -218,9 +218,9 @@ MonoBehaviour:
     poolTag: Dragon Pool
     pool: {fileID: 0}
   enemiesInWorld: []
-  breakTimeBetweenRounds: 5
+  breakTimeBetweenRounds: 10
   timeBetweenSpawns: 1.5
-  enemyPerRound: 020000000300000005000000080000000c0000000f0000001400000019000000190000001e000000
+  enemyPerRound: 010000000200000004000000060000000a0000000c0000000f000000120000001400000019000000
   currentRound: 0
 --- !u!1 &982218780692730201
 GameObject:

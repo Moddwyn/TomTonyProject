@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11fb94f0c09c79942b67208ec567f95c, type: 3}
   m_Name: Flying Monkey
   m_EditorClassIdentifier: 
-  health: 150
-  coinDropAmount: 65
+  health: 80
+  coinDropAmount: 180
   speed: 3
   damage: 25
   damageRate: 2

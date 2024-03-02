@@ -11,6 +11,7 @@ public class Health : MonoBehaviour
 
     [HorizontalLine]
     [ReadOnly] public bool dead;
+    public UnityEvent OnDamaged;
     public UnityEvent OnDie;
     public UnityEvent OnWin;
 
@@ -30,6 +31,7 @@ public class Health : MonoBehaviour
     public void ChangeHealth(int amount)
     {
         currentHealth += amount;
+        if(amount < 0) OnDamaged?.Invoke();
         if(currentHealth <= 0) currentHealth = 0;
         if(currentHealth <= 0 && !dead)
         {

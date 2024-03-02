@@ -36,6 +36,7 @@ public class Tower : MonoBehaviour
     void OnEnable() 
     {
         audioSource = GetComponent<AudioSource>();
+        audioSource.PlayOneShot(towerInfo.OnPlaceAudio);
         if(MovingProjectile())
             projectilePool = GameObject.FindGameObjectWithTag(poolTag).GetComponent<ObjectPooler>();
 

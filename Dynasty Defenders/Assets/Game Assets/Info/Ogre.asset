@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11fb94f0c09c79942b67208ec567f95c, type: 3}
   m_Name: Ogre
   m_EditorClassIdentifier: 
-  health: 120
-  coinDropAmount: 55
+  health: 100
+  coinDropAmount: 200
   speed: 3
   damage: 15
   damageRate: 2
