@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Game Assets/Scenes/Main Menu.unity
+    guid: 7b852cbb9010f7f4399d3996cb81b9a5
+  - enabled: 1
+    path: Assets/Game Assets/Scenes/Forest Map.unity
+    guid: c08caf5962182dd4c874df2ce12fb2b3
+  - enabled: 1
+    path: Assets/Game Assets/Scenes/Ice Map.unity
+    guid: b3fcf95ea2eae52489f05024ad9eca21
+  - enabled: 1
+    path: Assets/Game Assets/Scenes/Volcano Map.unity
+    guid: 0b035edff3ff89c40afa3487c47e8cc1
   m_configObjects: {}
